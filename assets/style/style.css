@@ -15,6 +15,9 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+form div {
+    margin-bottom: 20px; /* Отступ между каждым div */
+}
 input[type="text"],
 input[type="email"],
 input[type="age"],
@@ -50,7 +53,19 @@ button[type="submit"] {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тень кнопки */
     transition: background-color 0.3s, color 0.3s; /* Плавное изменение цвета при наведении */
 }
-
+#sex {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Закругленные углы */
+    box-sizing: border-box;
+}
+/* Стилизация ячейки для выбора пола при фокусе (если нужно) */
+#sex:focus {
+    outline: none;
+    border-color: #4CAF50; /* Изменение цвета границы при фокусе */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Тень при фокусе */
+}
 /* Стилизация кнопки при наведении */
 button[type="submit"]:hover {
     background-color: #45a049; /* Изменение цвета фона при наведении */
