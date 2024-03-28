@@ -25,3 +25,21 @@ form.addEventListener('submit', function (evt) {
 
   //Проверяем данные пользователя
 });
+ // Получаем ссылки на все элементы формы
+ const form = document.forms["myForm"];
+ const usernameInput = form.elements["username"];
+ const emailInput = form.elements["email"];
+ const ageInput = form.elements["age"];
+ const passwordInput = form.elements["password"];
+ const sexInput = form.elements["sex"];
+ const careerInput = form.elements["career"];
+ const agreeTermsInput = form.elements["agreeTerms"];
+ const submitBtn = form.querySelector("#submitBtn");
+
+ // Функция для отображения сообщения об ошибке
+ function showError(input, errorMessage) {
+     const errorSpan = input.nextElementSibling; // Получаем следующий элемент (элемент для вывода ошибки)
+     errorSpan.textContent = errorMessage; // Устанавливаем текст ошибки
+     errorSpan.style.color = "red"; // Устанавливаем красный цвет текста ошибки
+     input.style.border = "1px solid red"; // Устанавливаем красную рамку вокруг поля
+ }
