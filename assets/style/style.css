@@ -1,0 +1,72 @@
+body {
+    background-image: url(../images/unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100%;
+}
+/* Стилизация элементов формы */
+form {
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+form div {
+    margin-bottom: 20px; /* Отступ между каждым div */
+}
+input[type="text"],
+input[type="email"],
+input[type="age"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Закругленные углы */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Плавное изменение цвета границы при фокусе */
+}
+/* Стилизация кнопок выбора пола */
+form input[type="radio"] {
+    margin-right: 10px; /* Отступ между кнопками */
+    vertical-align: middle; /* Вертикальное выравнивание кнопок */
+}
+
+/* Дополнительные стили для кнопок (если нужно) */
+form input[type="radio"] + label {
+    font-weight: normal; /* Обычный текст для меток */
+    vertical-align: middle; /* Вертикальное выравнивание меток */
+}
+
+/* Стилизация кнопки */
+button[type="submit"] {
+    background-color: #4CAF50; /* Цвет фона */
+    color: white; /* Цвет текста */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border: none; /* Удаление границы */
+    border-radius: 5px; /* Закругление углов */
+    cursor: pointer; /* Изменение курсора при наведении */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тень кнопки */
+    transition: background-color 0.3s, color 0.3s; /* Плавное изменение цвета при наведении */
+}
+#sex {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Закругленные углы */
+    box-sizing: border-box;
+}
+/* Стилизация ячейки для выбора пола при фокусе (если нужно) */
+#sex:focus {
+    outline: none;
+    border-color: #4CAF50; /* Изменение цвета границы при фокусе */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Тень при фокусе */
+}
+/* Стилизация кнопки при наведении */
+button[type="submit"]:hover {
+    background-color: #45a049; /* Изменение цвета фона при наведении */
+}
